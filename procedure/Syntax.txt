@@ -1,0 +1,53 @@
+
+pgsql
+==========
+
+create or replace procedure pr_name(p_name varchar, p_age int)
+language plpgsql
+as $$
+declare
+	v_name varchar, v_age int;
+begin
+	procedure body - all logics
+end;
+$$
+
+
+oracle
+===========
+
+create or replace procedure pr_name(p_name varchar, p_age int)
+as
+	v_name varchar, v_age int;
+begin
+	procedure body - all logics
+end;
+
+
+Microsoft sql server
+=====================
+
+create or alter procedure pr_name(@p_name varchar, @p_age int)
+as
+	declare @v_name varchar, @v_age int;
+begin
+	procedure body - all logics
+end;
+
+
+Mysql
+=========
+// There is no as clause in mysql 
+// there is no replace procedure clause in mysql we have to drop and create it again 
+
+DELIMITER $$
+create procedure pr_name(p_name varchar, p_age int)
+begin
+declare v_name varchar;  // we cannot declare in single line all variable
+	declare v_age int;
+	procedure body - all logics
+end $$
+
+
+
+
