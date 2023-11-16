@@ -5,6 +5,7 @@ with table1_1(a11,a12,a13,a15) as
 case
  when lastname = 'paramasivam' then 'palani'
  when lastname = 'palaniappan' then 'ADWAIDAN'
+ ELSE 'someone'
 end as column6
 from persons)
 select a15 from table1_1
